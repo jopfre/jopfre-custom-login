@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'vodafone_rgregular';
+  src: url("font/vodafonerg-regular-webfont.eot");
+  src: url("font/vodafonerg-regular-webfont.eot?#iefix") format("embedded-opentype"), url("font/vodafonerg-regular-webfont.woff2") format("woff2"), url("font/vodafonerg-regular-webfont.woff") format("woff"), url("font/vodafonerg-regular-webfont.ttf") format("truetype"), url("font/vodafonerg-regular-webfont.svg#vodafone_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.custom-logo-link {
+  display: inline-block;
+  pointer-events: none; }
+
+.custom-logo {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  bottom: 18px;
+  right: 18px; }
+  @media (min-width: 640px) {
+    .custom-logo {
+      width: 80px;
+      right: 52px;
+      bottom: 32px; } }
+
+#vodafone-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px; }
+  @media (min-width: 768px) {
+    #vodafone-logo {
+      width: 250px; } }
+
+.login {
+  background-image: url(img/login-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  display: table;
+  width: 100%; }
+  .login h1 {
+    max-width: 420px;
+    margin: 0 auto 8px; }
+    @media (min-width: 768px) {
+      .login h1 {
+        max-width: 440px; } }
+    .login h1 a {
+      background-image: url(img/login-logo.png);
+      background-size: 100%;
+      background-position: center;
+      width: 100%;
+      padding-bottom: 22%;
+      height: 0;
+      margin: 0; }
+      @media (min-width: 768px) {
+        .login h1 a {
+          margin: 0 auto; } }
+  .login form, .login #nav {
+    padding: 0;
+    max-width: 290px;
+    margin: 0 auto;
+    background-color: transparent; }
+  .login #loginform p:first-child {
+    margin-top: 0; }
+  .login .input {
+    font-size: 0.8rem !important;
+    font-family: 'vodafone_rgregular', sans-serif; }
+  .login label {
+    visibility: hidden; }
+    .login label input {
+      visibility: visible; }
+  .login #wp-submit {
+    background: transparent url("img/btn-login.png") no-repeat center center;
+    background-size: 100%;
+    width: 90px;
+    height: 33px;
+    border: none;
+    outline: 0 !important;
+    box-shadow: none;
+    float: left;
+    text-indent: -9999px;
+    z-index: 1;
+    position: relative; }
+  .login #nav {
+    width: 100%;
+    text-align: right;
+    position: relative;
+    top: -40px; }
+    .login #nav a {
+      color: rgba(255, 255, 255, 0.8);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+      -webkit-transition: 0.1s padding-bottom ease-out;
+      transition: 0.1s padding-bottom ease-out;
+      font-weight: 500;
+      box-shadow: none;
+      font-size: 0.6rem; }
+      @media (min-width: 480px) {
+        .login #nav a {
+          padding: 0 0 0.1rem; } }
+      .login #nav a:hover, .login #nav a:active {
+        color: white;
+        padding-bottom: 0;
+        border-color: white; }
+  .login #backtoblog {
+    display: none; }
+
+#login {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: 0;
+  padding: 0 12px; }
+  #login form p.submit {
+    margin-top: 10px; }
+  #login .message {
+    max-width: 290px;
+    margin: 0 auto;
+    font-family: 'vodafone_rgregular', sans-serif;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-bottom: 8px;
+    font-size: 0.7rem; }
+
+#login form p {
+  line-height: 0;
+  margin: 8px 0; }
+
+#login form input[type="text"], #login form input[type="password"] {
+  padding: 9px;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.forgetmenot {
+  display: none; }
+
+#login_error {
+  max-width: 262px;
+  margin: 8px auto !important;
+  font-size: 0.8rem; }
+
+.site-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }

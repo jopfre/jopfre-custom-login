@@ -1,0 +1,184 @@
+@import 'vars';
+@import 'font';
+
+.custom-logo-link {
+  display: inline-block;
+  pointer-events: none;
+}
+.custom-logo {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  @media(min-width: $bps) {
+    width: 80px;
+    right: 52px;
+    bottom: 32px;
+  }
+}
+
+#vodafone-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  @media(min-width: $bpm) {
+     width: 250px;
+  }
+}
+
+.login {
+  background-image: url(img/login-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  display: table;
+  width: 100%;
+  h1 {
+    max-width: 420px;
+    @media(min-width: $bpm) {
+      max-width: 440px;
+    }
+    margin: 0 auto 8px;
+    a {
+      background-image: url(img/login-logo.png);
+      background-size: 100%;
+      background-position: center;
+      width: 100%;
+      padding-bottom: 22%;
+      height: 0;
+      margin: 0;
+      // margin-bottom: 0;
+      // max-width: 420px;
+      // margin: 3rem auto 0;
+      
+      @media(min-width: $bpm) {
+        margin: 0 auto;
+        // max-width: 440px;
+        // height: 100px;
+      }
+    }
+  }
+  form, #nav {
+    padding: 0;
+    max-width: 290px;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+  #loginform p:first-child {
+    margin-top: 0;
+  }
+  .input {
+    font-size: 0.8rem !important;
+    font-family: 'vodafone_rgregular', sans-serif;
+  }
+  label {
+    visibility: hidden;
+    input {
+      visibility: visible;
+    }
+  }
+  #wp-submit {
+    background: transparent url("img/btn-login.png") no-repeat center center;
+    background-size: 100%;
+    width: 90px;
+    height: 33px;
+    border:none;
+    // margin-top: -10px;
+    outline: 0 !important;
+    box-shadow: none;
+    float: left;
+    text-indent: -9999px;
+    z-index: 1;
+    position: relative;
+  }
+  #nav {
+    width: 100%;
+    text-align: right;
+    position: relative;
+    top: -40px;
+    a {
+      color: rgba(white, 0.8);
+      // padding: 0.5rem 0.5rem;
+      border-bottom: 1px solid rgba(white, 0.8);
+      transition: 0.1s padding-bottom ease-out;
+      @media(min-width: $bpxs) {
+        padding: 0 0 0.1rem;
+      }
+      font-weight: 500;
+      box-shadow: none;
+      font-size: 0.6rem;
+      &:hover, &:active {
+        color: white;
+        padding-bottom: 0;
+        border-color: white;
+        // background-color: darken($color, 25);
+      }
+    }
+  }
+  #backtoblog {
+    display: none;
+  }
+}
+
+#login {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  // position: absolute;
+  padding-top: 0;
+  // top: 50%;
+  // left: 0;
+  // right: 0;
+  // transform: translateY(-50%);
+  padding: 0 12px;
+  form {
+    // margin-top: 8px;
+    p.submit {
+      margin-top: 10px;
+    }
+  }
+  .message {
+    max-width: 290px;
+    margin: 0 auto;
+    font-family: 'vodafone_rgregular', sans-serif;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-bottom: 8px;
+    font-size: 0.7rem;
+  }
+}
+
+#login form{
+  p {
+    line-height: 0;
+    margin: 8px 0;
+  }
+  input[type="text"], input[type="password"] {
+    padding: 9px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+.forgetmenot {
+  display: none;
+}
+#login_error {
+  max-width: 262px;
+  margin: 8px auto !important;
+  font-size: 0.8rem;
+}
+
+// @import 'footer';
+
+.site-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+// @import 'modal';
