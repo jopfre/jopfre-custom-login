@@ -39,7 +39,7 @@ add_filter( 'login_headerurl', 'jcl_login_logo_url' );
 function jcl_login_logo_url_title() {
   return get_bloginfo( 'name' );
 }
-add_filter( 'login_headertitle', 'jcl_login_logo_url_title' );
+add_filter( 'login_headertext', 'jcl_login_logo_url_title' );
 
 function jcl_login_footer() {
   the_custom_logo();
@@ -53,11 +53,19 @@ function jcl_login_footer() {
 add_action('login_footer', 'jcl_login_footer');
 
 
-function redirect_non_admin_users() {
+function jcl_redirect_non_admin_users() {
   if ( ! current_user_can( 'edit_posts' ) && '/wp-admin/admin-ajax.php' != $_SERVER['PHP_SELF'] ) {
     wp_redirect( home_url() );
     exit;
   }
 }
-add_action( 'admin_init', 'redirect_non_admin_users' );
+add_action( 'admin_init', 'jcl_redirect_non_admin_users' );
+
+
+function jcl_force_login() {
+  if (!is_user_logged_in()) {
+    auth_redirect();
+  } 
+}
+add_action('get_header', 'jcl_force_login')
 ?>
